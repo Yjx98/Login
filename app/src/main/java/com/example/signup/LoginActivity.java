@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (TextUtils.equals(account, userName) && TextUtils.equals(password, userPassword)) {
                     Toast.makeText(LoginActivity.this, "恭喜您，登陆成功~", Toast.LENGTH_SHORT).show();
+
                     if (cbRemember.isChecked()) {
                         // 在登陆的时候进行账号和密码的存储
                         SharedPreferences spf = getSharedPreferences("spfRecorid", MODE_PRIVATE);
@@ -74,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
 
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    intent.putExtra("account", account);
+                    intent.putExtra("account", account);  // 将账户名传给首页，用于显示当前用户名
                     startActivity(intent);
                     LoginActivity.this.finish();  // 跳转过去另一个页面，销毁当前页面
                 }
@@ -109,7 +110,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    public void toRegister(View view) {  // 点击事件
+    public void toRegister(View view) {  // 当点击还没有账号时调用
 
         // 登陆页面跳转到注册页面
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
