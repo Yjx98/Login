@@ -2,6 +2,8 @@ package com.example.signup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -26,6 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
         etConfirm = findViewById(R.id.et_confirm);
         btRegister = findViewById(R.id.btn_register);
         cbAgree = findViewById(R.id.cb_agree);
+
 
 
         // TextUtils.empty() 空包括两种情况：一个是 null（空指针），另一个是 "“（空字符串）
@@ -57,7 +60,24 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
+                // 存储：注册成功后要存储注册的用户名和密码
+                SharedPreferences spf = getSharedPreferences("spfRecorid", MODE_PRIVATE);
+                SharedPreferences.Editor edit = spf.edit();
+                edit.putString("account", name);
+                edit.putString("password", password);
+
+                // 数据回传
+                Intent intent = new Intent();
+                Bundle bundle = new Bundle();
+                bundle.putString("account", name);
+                bundle.putString("password", password);
+                intent.putExtras(bundle);
+                setResult(RESULT_OK, intent);
+
                 Toast.makeText(RegisterActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
+
+                // 注册成功后回到上一个登陆界面，因为当前页面是从上一个页面跳转过来的，所以结束掉当前页面就直接回到了上一个页面
+                RegisterActivity.this.finish();
             }
         });
     }
