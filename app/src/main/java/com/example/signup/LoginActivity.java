@@ -62,19 +62,20 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (cbRemember.isChecked()) {
                         // 在登陆的时候进行账号和密码的存储
-                        SharedPreferences spf = getSharedPreferences("spfRecorid", MODE_PRIVATE);
+                        SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
                         SharedPreferences.Editor edit = spf.edit();
                         edit.putString("account", account);
                         edit.putString("password", password);
                         edit.putBoolean("isRemember", true);
                         edit.apply();
                     } else {
-                        SharedPreferences spf = getSharedPreferences("spfRecorid", MODE_PRIVATE);
+                        SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
                         SharedPreferences.Editor edit = spf.edit();
                         edit.putBoolean("isRemember", false);
                     }
 
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, UserProfileActivity.class);
+
                     intent.putExtra("account", account);  // 将账户名传给首页，用于显示当前用户名
                     startActivity(intent);
                     LoginActivity.this.finish();  // 跳转过去另一个页面，销毁当前页面
@@ -95,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        SharedPreferences spf = getSharedPreferences("spfRecorid", MODE_PRIVATE);
+        SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
         boolean isRemember = spf.getBoolean("isRemember", false);// 取出键值为isRemember的值，默认为false
         String account = spf.getString("account", "");// 初始为空字符串
         String password = spf.getString("password", "");//初始为空

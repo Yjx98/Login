@@ -61,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
 
                 // 存储：注册成功后要存储注册的用户名和密码
-                SharedPreferences spf = getSharedPreferences("spfRecorid", MODE_PRIVATE);
+                SharedPreferences spf = getSharedPreferences("spfRecord", MODE_PRIVATE);
                 SharedPreferences.Editor edit = spf.edit();
                 edit.putString("account", name);
                 edit.putString("password", password);

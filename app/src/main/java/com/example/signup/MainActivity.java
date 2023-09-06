@@ -3,6 +3,7 @@ package com.example.signup;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -27,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void logout(View view) {
+        SharedPreferences spfRecord = getSharedPreferences("spfRecord", MODE_PRIVATE);
+        SharedPreferences.Editor edit = spfRecord.edit();
+        edit.putBoolean("isLogin", false);
+        edit.apply();
+
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         this.finish();

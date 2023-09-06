@@ -196,6 +196,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="编辑资料"
+        android:onClick="toEdit"
         android:layout_margin="20dp"
         />
 
@@ -203,6 +204,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="退出登陆"
+        android:onClick="logout"
         android:layout_margin="15dp"
         />
 
