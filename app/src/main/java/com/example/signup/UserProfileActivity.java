@@ -40,14 +40,14 @@ public class UserProfileActivity extends AppCompatActivity {
         String bithDayTime = spfRecord.getString("bith_day_time", "");
         String sign = spfRecord.getString("sign", "");
 
-        //tvNickName.setText(nickName);
+        tvNickName.setText(nickName);
         tvAccount.setText(account);
-        //tvAge.setText(age);
-        //tvGender.setText(gender);
-        //tvCity.setText(city);
-        //tvSchool.setText(school);
-        //tvBirthdayTime.setText(bithDayTime);
-        //tvSign.setText(sign);
+        tvAge.setText(age);
+        tvGender.setText(gender);
+        tvCity.setText(city);
+        tvSchool.setText(school);
+        tvBirthdayTime.setText(bithDayTime);
+        tvSign.setText(sign);
     }
 
     private void initView() {
@@ -57,7 +57,7 @@ public class UserProfileActivity extends AppCompatActivity {
         tvGender = findViewById(R.id.tv_gender);
         tvCity = findViewById(R.id.tv_city);
         tvHome = findViewById(R.id.tv_home_text);
-        tvSchool = findViewById(R.id.et_school_text);
+        tvSchool = findViewById(R.id.tv_school_text);
         tvSign = findViewById(R.id.tv_sign_text);
         tvBirthdayTime = findViewById(R.id.tv_birth_time_text);
     }

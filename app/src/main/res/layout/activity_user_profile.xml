@@ -116,6 +116,7 @@
             android:id="@+id/tv_birth_time_text"
             android:gravity="center"
             android:text="1yyyj"
+            android:layout_toRightOf="@+id/tv_birth_time"
             android:layout_marginTop="5dp"
             android:textSize="15sp" />
     </RelativeLayout>
@@ -140,6 +141,7 @@
             android:id="@+id/tv_home_text"
             android:gravity="center"
             android:text="北京"
+            android:layout_toRightOf="@+id/tv_home"
             android:layout_marginTop="5dp"
             android:textSize="15sp" />
     </RelativeLayout>
@@ -164,6 +166,7 @@
             android:id="@+id/tv_school_text"
             android:gravity="center"
             android:text="PKU"
+            android:layout_toRightOf="@+id/tv_school"
             android:layout_marginTop="5dp"
             android:textSize="15sp" />
     </RelativeLayout>
@@ -188,6 +191,7 @@
             android:id="@+id/tv_sign_text"
             android:gravity="center"
             android:text="这个人没有留下姓名"
+            android:layout_toRightOf="@+id/tv_sign"
             android:layout_marginTop="5dp"
             android:textSize="15sp" />
     </RelativeLayout>
