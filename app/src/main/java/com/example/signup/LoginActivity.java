@@ -112,7 +112,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void toRegister(View view) {  // 当点击还没有账号时调用
-
         // 登陆页面跳转到注册页面
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         loginLauncher.launch(intent);

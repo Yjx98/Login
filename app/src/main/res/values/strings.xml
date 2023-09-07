@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">SignUp</string>
+
+    <string-array name="cities">
+        <item>北京</item>
+        <item>天津</item>
+        <item>黑龙江</item>
+        <item>辽宁</item>
+        <item>河北</item>
+        <item>甘肃</item>
+        <item>陕西</item>
+        <item>河南</item>
+        <item>四川</item>
+
+    </string-array>
+
 </resources>
