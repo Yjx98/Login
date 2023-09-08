@@ -28,7 +28,19 @@
 
 ##### 1、登陆界面
 
-https://img-blog.csdnimg.cn/f90fc47bfa8a4aa6878a56684aaec533.png
+https://cdn.nlark.com/yuque/0/2023/png/26034580/1694067038190-615f379d-fca8-432d-b760-958563eae9c5.png
+
+##### 2、注册界面
+
+https://cdn.nlark.com/yuque/0/2023/png/26034580/1694067327938-bcc692da-2953-4431-92df-7bf3ee542006.png
+
+##### 3、用户首页
+
+https://cdn.nlark.com/yuque/0/2023/png/26034580/1694067482926-e827ad4f-5cd9-4211-ac89-42a337538c80.png
+
+##### 4、用户信息编辑
+
+https://cdn.nlark.com/yuque/0/2023/png/26034580/1694067699592-16ecd2d4-1131-4552-a214-3e0beebef32e.png
 
 
 
