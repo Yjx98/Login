@@ -26,10 +26,11 @@
 
 #### （二）实现效果
 
-<img src="C:\Users\yinjiaxuan\Desktop\1.png" alt="1" style="zoom:50%;" />
+##### 1、登陆界面
 
-<img src="C:\Users\yinjiaxuan\Desktop\2.png" alt="2" style="zoom:50%;" />
+<img src="C:\Users\yinjiaxuan\AppData\Roaming\Typora\typora-user-images\image-20230908142353252.png" alt="image-20230908142353252" style="zoom:50%;" />
 
-<img src="C:\Users\yinjiaxuan\Desktop\3.png" alt="3" style="zoom: 67%;" />
 
-<img src="C:\Users\yinjiaxuan\Desktop\4.png" alt="4" style="zoom:50%;" />
+
+
+
