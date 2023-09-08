@@ -28,9 +28,7 @@
 
 ##### 1、登陆界面
 
-<img src="C:\Users\yinjiaxuan\AppData\Roaming\Typora\typora-user-images\image-20230908142353252.png" alt="image-20230908142353252" style="zoom:50%;" />
-
-
+https://cdn.nlark.com/yuque/0/2023/png/26034580/1694067038190-615f379d-fca8-432d-b760-958563eae9c5.png
 
 
 
